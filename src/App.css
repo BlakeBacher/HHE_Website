@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, button,aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+:root{
+  /* COLORS */
+  --HH_red: #8D1B28;
+  --HH_grey: lightgrey;
+
+  /* BOXSHADOW */
+  --HH_boxshadow: 0px 0px 10px grey;
+  --HH_button_boxshadow: 0px 8px 4px rgb(27, 27, 27);
+  --HH_button_active_boxshadow: 0px 2px 5px black;
+
+
+  /* FONT */
+  --HH_font: 'Montserrat', sans-serif;
+  --HH_font_color: black;
+  --HH_2nd_font_color:white;
+
+  /* IMAGES */
+  --HHE_background_image: url(./Images/electrical_background.jpg);
+  --HHE_commercial_image: url(./Images/Hedgehog_Comm.jpg);
+  --HHE_service_image: url(./Images/hedgehog_service.jpg);
+  --HHE_solar_image: url(./Images/hedgehog_solar.jpg);
+}
+
+
+
+
+
+.App {
+
+}
+.body{
+  height: 100vh;
+  background-image: var(--HHE_background_image);
+  /* background-size: fill; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: .2;
+}
+.header{
+  padding:30px;
+  background: #8D1B28;
+  height: 120px;
+}
+.button{
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  border: none;
+  outline: none;
+  margin: 10px auto 10px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 4px rgb(27, 27, 27);
+}
+.button:hover{
+background: rgb(155, 155, 155)
+}
+.button:active{
+  box-shadow: 0px 2px 5px black;
+  transform: translateY(4px);
+}
+
+
+
+
+.HHE_logo {
+  height: 120px;
+}
+
+
+
+
+
+.choiceboxmain {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.choicebox{
+  width: 470px;
+  height: 300px;
+  background: white;
+  color: black;
+  /* box-shadow: 0px 0px 20px rgb(192, 192, 192); */
+  transition: transform .2s;
+  background-size: cover;
+}
+.choicebox:hover {
+  transform: scale(1.1);
+  /* box-shadow: 0px 20px 40px rgb(61, 61, 61); */
+}
+
+.choicebox_title{
+  color: var(--HH_2nd_font_color);
+  opacity: 0;
+  min-height: 100%;
+  transition: transform .2s;
+  background: black;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.choicebox_title:hover{
+  background: 0;
+  opacity: 1;
+}
+.HHE_solar_image{
+  background-image: var(--HHE_solar_image)
+}
+.HHE_service_image{
+  background-image: var(--HHE_service_image)
+}
+.HHE_comm_image{
+  background-image: var(--HHE_commercial_image)
+} 
+
+
+.message_icon_box{
+  background: #8D1B28;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  right: 50px;
+  bottom: 55px;
+  z-index: 10;
+  box-shadow: 0px 10px 30px rgb(92, 92, 92);
+}
+.messageicon{
+  margin: 15px;
+  height: 40px;
+}
+
