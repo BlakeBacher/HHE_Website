@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, button,aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, header {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -53,7 +53,7 @@ table {
 :root{
   /* COLORS */
   --HH_red: #8D1B28;
-  --HH_grey: lightgrey;
+  --HH_grey: rgb(209, 209, 209);
 
   /* BOXSHADOW */
   --HH_boxshadow: 0px 0px 10px grey;
@@ -62,12 +62,12 @@ table {
 
 
   /* FONT */
-  --HH_font: 'Montserrat', sans-serif;
+  --HH_font: 'Work Sans', sans-serif;
   --HH_font_color: black;
   --HH_2nd_font_color:white;
 
   /* IMAGES */
-  --HHE_background_image: url(./Images/electrical_background.jpg);
+  --HHE_background: url(./Images/o.jpg);
   --HHE_commercial_image: url(./Images/Hedgehog_Comm.jpg);
   --HHE_service_image: url(./Images/hedgehog_service.jpg);
   --HHE_solar_image: url(./Images/hedgehog_solar.jpg);
@@ -78,21 +78,47 @@ table {
 
 
 .App {
-
+  font-family: var(--HH_font);
+  font-weight: 400;
+  font-size: 18px;
+  /* letter-spacing: 1px; */
+  /* font-style: italic; */
 }
 .body{
   height: 100vh;
-  background-image: var(--HHE_background_image);
-  /* background-size: fill; */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: var(--HHE_background);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
   z-index: -1;
-  opacity: .2;
+  opacity: .3;
 }
-.header{
-  padding:30px;
-  background: #8D1B28;
-  height: 120px;
+.Nav{
+  padding: 20px;
+  background: var(--HH_red);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+#navbuttons{
+  float:right;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+  width: 900px;
+  float: right;
+  align-items: center;
+}
+.navbutton{
+  list-style: none;
+  border: none;
+  background: var(--HH_red);
+  color: var(--HH_2nd_font_color)
+}
+.navbutton:hover{
+ color: black;
 }
 .button{
   height: 50px;
@@ -100,7 +126,6 @@ table {
   text-align: center;
   border: none;
   outline: none;
-  margin: 10px auto 10px auto;
   background: white;
   border-radius: 10px;
   box-shadow: 0px 8px 4px rgb(27, 27, 27);
@@ -112,12 +137,27 @@ background: rgb(155, 155, 155)
   box-shadow: 0px 2px 5px black;
   transform: translateY(4px);
 }
-
+#schedule_button{
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: white;
+}
+#schedule_button:hover{
+  /* background: rgb(197, 197, 197) */
+  box-shadow: 0px 5px 25px rgb(70, 19, 19);
+}
+#schedule_button:active{
+  transform: scale(0.97);
+  box-shadow: 0px 0px 0px;
+}
 
 
 
 .HHE_logo {
-  height: 120px;
+  height: 80px;
 }
 
 
@@ -178,11 +218,24 @@ background: rgb(155, 155, 155)
   position: fixed;
   right: 50px;
   bottom: 55px;
-  z-index: 10;
-  box-shadow: 0px 10px 30px rgb(92, 92, 92);
+  z-index: 10 !important;
+  box-shadow: 0px 0px 0px;
+}
+.message_icon_box:hover{
+  box-shadow: 0px 5px 25px rgb(70, 19, 19);
 }
 .messageicon{
   margin: 15px;
   height: 40px;
 }
 
+footer{
+  height: 400px;
+  background: var(--HH_grey);
+  color: var(--HH_font_color);
+  text-align: center;
+  padding: 30px;
+}
+.socail_icon{
+  margin: 10px;
+}

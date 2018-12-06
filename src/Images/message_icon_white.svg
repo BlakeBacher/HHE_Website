@@ -6,8 +6,7 @@
  </g>
  <g>
   <title>Layer 1</title>
-  <path fill-opacity="0" id="svg_2" fill="#000000" d="m0,0.081411l48,0l0,48l-48,0l0,-48z"/>
-  <rect id="svg_3" height="20.922626" width="28.005382" y="10.438709" x="10.445069" stroke-opacity="null" stroke-width="null" stroke="null" fill="#000000"/>
+  <path id="svg_2" fill="none" d="m0,0l48,0l0,48l-48,0l0,-48z"/>
   <path fill="#ffffff" id="svg_1" d="m40,4l-32,0c-2.21,0 -3.98,1.79 -3.98,4l-0.02,36l8,-8l28,0c2.21,0 4,-1.79 4,-4l0,-24c0,-2.21 -1.79,-4 -4,-4zm-4,24l-24,0l0,-4l24,0l0,4zm0,-6l-24,0l0,-4l24,0l0,4zm0,-6l-24,0l0,-4l24,0l0,4z"/>
  </g>
 </svg>
