@@ -1,0 +1,105 @@
+.nav_leftside {
+    height: 90px;
+    width: 40%;
+    position: fixed;
+    padding: 20px;
+    z-index: 10px;
+    background: var(--HH_red);
+    color: white;
+  }
+  .nav_leftside_active{
+    height: 30px;
+    width: 40%;
+    position: fixed;
+    padding: 20px;
+    z-index: 10;
+    background: var(--HH_red);
+    color: white;
+    transition: ease-in 0.3s;
+  }
+  .nav_rightside{
+    height: 90px;
+    width: 60%;
+    position: fixed;
+    padding: 20px;
+    z-index: 10px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    background: var(--HH_grey);
+  }
+  .nav_rightside_active{
+    height: 30px;
+    width: 60%;
+    position: fixed;
+    z-index: 10;
+    right: 0px;
+    top: 0px;
+    float: right;
+    padding: 20px;
+    background: var(--HH_red);
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    transition: ease-in 0.3s;
+  }
+
+
+
+  .nav_button{
+    border: none;
+    outline: none;
+    background: var(--HH_grey);
+    color: var(--HH_2nd_font_color);
+    height: 40px;
+    width: 140px;
+    cursor: pointer;
+  }
+  .nav_button:hover{
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .nav_button_active{
+    list-style: none;
+    border: none;
+    outline: none;
+    background: var(--HH_red);
+    color: var(--HH_2nd_font_color);
+    height: 40px;
+    width: 140px;
+    transition: ease-in 0.3s;
+    cursor: pointer;
+  }
+  .nav_button_active:hover{
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0s !important;
+  }
+
+  .nav_schudule_button{
+    border: none;
+    outline: none;
+    background: var(--HH_grey);
+    color: var(--HH_2nd_font_color);
+    height: 40px;
+    width: 230px;
+    cursor: pointer;
+  }
+  .nav_schudule_button:hover{
+      font-weight: 600;
+  }
+  .nav_schudule_button_active{
+    height: 40px;
+    width: 230px;
+    cursor: pointer;
+  }
+  .nav_schudule_button_active:hover{
+      /* font-weight: 500; */
+      /* background: rgb(218, 218, 218); */
+      box-shadow: 0px 10px 20px -8px black;
+  }
