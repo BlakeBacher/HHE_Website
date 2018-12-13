@@ -41,7 +41,7 @@ export default class Nav extends Component {
                     :
                         <div>
                             <img alt='' src={HHE_LOGO_WHITE} style={{height:'70px'}}/>
-                            <p>We cultivate leadership and excellence in everything we do.</p> 
+                            <p style={{fontStyle:'italic',fontSize:'15px'}}>We cultivate leadership and excellence in everything we do.</p> 
                         </div> 
                     }
                 </div>
